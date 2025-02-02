@@ -17,7 +17,9 @@ The project is divided into two main parts:
                                                     period=1)
    ```
 2. **Model Deployment**: The second part involves manually importing the trained model's weights (checkpoints) in order to run the model locally. To use the model with a webcam, the user should download the saved `cp.ckpt` file and load the weights using the following command:
-````python
+
+```python
 model.load_weights('path/to/model/cp.ckpt')
 ```
+
 Once the weights are loaded, the model can be used in real-time to detect mask usage through the webcam.
